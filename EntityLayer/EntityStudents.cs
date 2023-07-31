@@ -6,8 +6,9 @@
         private string stuName;
         private string lastname;
         private string number;
-        private string picture;
+        private string foto;
         private decimal balance;
+        private string password;
 
         public int StuId 
         { 
@@ -27,16 +28,19 @@
             get => number; 
             set => number = value; 
         }
-        public string Picture 
+        public string Foto 
         { 
-            get => picture; 
-            set => picture = value; 
+            get => foto; 
+            set => foto = value; 
         }
         public decimal Balance 
         { 
             get => balance; 
             set => balance = value; 
         }
-
+        public string Password 
+        { 
+            get => password; set => password = value; 
+        }
     }
 }
