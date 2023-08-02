@@ -57,3 +57,9 @@ C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_
 C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\obj\Debug\Summer_School_Website.csproj.CopyComplete
 C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\obj\Debug\Summer_School_Website.dll
 C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\obj\Debug\Summer_School_Website.pdb
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\bin\Business_Logic_Layer.dll
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\bin\Data_Access_Layer.dll
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\bin\Entitiy_Layer.dll
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\bin\Business_Logic_Layer.pdb
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\bin\Data_Access_Layer.pdb
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Summer_School_Website\bin\Entitiy_Layer.pdb
