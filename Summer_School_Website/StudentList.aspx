@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="StudentList.aspx.cs" Inherits="Summer_School_Website.StudentList" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -10,16 +11,27 @@
             <th>Student Number</th>
             <th>Student Password</th>
             <th>Student Photo</th>
+            <th>Student Balance</th>
+            <th>Operations</th>
         </tr>
         <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                    <tr>
+                        <td><%# Eval("StuId")%></td>
+                        <td><%# Eval("StuName")%></td>
+                        <td><%# Eval("Lastname")%></td>
+                        <td><%# Eval("Number")%></td>
+                        <td><%# Eval("Password")%></td>
+                        <td><%# Eval("Photo")%></td>
+                        <td><%# Eval("Balance")%></td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink1" CssClass ="btn btn-danger" runat="server">Sil</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" CssClass ="btn btn-success" runat="server">Güncelle</asp:HyperLink>
+                        </td>
+                    </tr>
+                </ItemTemplate>
+            </asp:Repeater>
         </tbody>
     </table>
 </asp:Content>

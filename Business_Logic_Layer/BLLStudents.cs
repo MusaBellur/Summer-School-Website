@@ -1,5 +1,7 @@
 ﻿using EntityLayer;
 using DataAccessLayer;
+using System.Collections.Generic;
+
 namespace BusinessLogicLayer
 {
     public class BLLStudents
@@ -11,6 +13,10 @@ namespace BusinessLogicLayer
                 return DALStudents.StudentsAdd(p);
             }
             return -1;
+        }
+        public static List<EntityStudents> BllList()
+        {
+            return DALStudents.StudentList();
         }
     }
 }

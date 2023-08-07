@@ -12,9 +12,18 @@ namespace EntityLayer
         private string teacherName;
         private string branch;
 
-        public int TeacherId { get => teacherId; set => teacherId = value; }
-        public string TeacherName { get => teacherName; set => teacherName = value; }
-        public string Branch { get => branch; set => branch = value; }
+        public int TeacherId 
+        { 
+            get => teacherId; set => teacherId = value; 
+        }
+        public string TeacherName 
+        { 
+            get => teacherName; set => teacherName = value; 
+        }
+        public string Branch 
+        { 
+            get => branch; set => branch = value; 
+        }
         
     }
 }

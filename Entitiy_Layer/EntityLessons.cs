@@ -13,10 +13,22 @@ namespace EntityLayer
         private string min;
         private string max;
 
-        public int LesId { get => lesId; set => lesId = value; }
-        public string LesName { get => lesName; set => lesName = value; }
-        public string Min { get => min; set => min = value; }
-        public string Max { get => max; set => max = value; }
+        public int LesId 
+        {
+            get => lesId; set => lesId = value; 
+        }
+        public string LesName 
+        { 
+            get => lesName; set => lesName = value; 
+        }
+        public string Min 
+        { 
+            get => min; set => min = value; 
+        }
+        public string Max 
+        { 
+            get => max; set => max = value; 
+        }
 
     }
 }
