@@ -68,8 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="StudentList.aspx" />
+    <Content Include="StudentUpdate.aspx" />
     <Content Include="Web.config" />
     <Content Include="StudentRegistrations.aspx" />
+    <Content Include="StudentDelete.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +95,20 @@
     </Compile>
     <Compile Include="StudentRegistrations.aspx.designer.cs">
       <DependentUpon>StudentRegistrations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDelete.aspx.cs">
+      <DependentUpon>StudentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentDelete.aspx.designer.cs">
+      <DependentUpon>StudentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentUpdate.aspx.cs">
+      <DependentUpon>StudentUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentUpdate.aspx.designer.cs">
+      <DependentUpon>StudentUpdate.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

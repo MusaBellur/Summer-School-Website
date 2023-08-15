@@ -26,8 +26,8 @@
                         <td><%# Eval("Photo")%></td>
                         <td><%# Eval("Balance")%></td>
                         <td>
-                            <asp:HyperLink ID="HyperLink1" CssClass ="btn btn-danger" runat="server">Sil</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink2" CssClass ="btn btn-success" runat="server">Güncelle</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%# "~/StudentDelete.aspx?StuID=" + Eval("StuId") %>' ID="HyperLink1" CssClass ="btn btn-danger" runat="server">Delete</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%# "~/StudentUpdate.aspx?StuID=" + Eval("StuId") %>' ID="HyperLink2" CssClass ="btn btn-success" runat="server">UpDate</asp:HyperLink>
                         </td>
                     </tr>
                 </ItemTemplate>

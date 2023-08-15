@@ -11,7 +11,7 @@ namespace DataAccessLayer
 {
     public class DALStudents
     {
-        public static int StudentsAdd(EntityStudents paramater) 
+        public static int StudentsAdd(EntityStudents paramater)
         {
             SqlCommand cmd = new SqlCommand("insert into Tbl_Students (stuName,stuLastName,stuNumber,stuPhoto,stuPassword) values (@p1,@p2,@p3,@p4,@p5)", Connection.bgl);
 
@@ -49,6 +49,57 @@ namespace DataAccessLayer
             }
             dr.Close();
             return entityStudents;
+        }
+        public static bool StudentDelete(int StudentId)
+        {
+            SqlCommand cmd2 = new SqlCommand("Delete From Tbl_Students where StuId=@p1", Connection.bgl);
+            if (cmd2.Connection.State != ConnectionState.Open)
+            {
+                cmd2.Connection.Open();
+            }
+            cmd2.Parameters.AddWithValue("@p1", StudentId);
+            return cmd2.ExecuteNonQuery() > 0;
+
+        }
+        public static List<EntityStudents> StudentUpdList(int id)
+        {
+            List<EntityStudents> entityStudents = new List<EntityStudents>();
+            SqlCommand cmd3 = new SqlCommand("Select * From Tbl_Students where StuId = @p1", Connection.bgl);
+            cmd3.Parameters.AddWithValue("p1", id);
+            if (cmd3.Connection.State != ConnectionState.Open)
+            {
+                cmd3.Connection.Open();
+            }
+            SqlDataReader dr = cmd3.ExecuteReader();
+            while (dr.Read())
+            {
+                EntityStudents ent = new EntityStudents();
+                ent.StuName = dr["StuName"].ToString();
+                ent.Lastname = dr["StuLastName"].ToString();
+                ent.Number = dr["StuNumber"].ToString();
+                ent.Password = dr["StuPassword"].ToString();
+                ent.Photo = dr["StuPhoto"].ToString();
+                ent.Balance = Convert.ToDecimal(dr["StuBalance"].ToString());
+                entityStudents.Add(ent);
+            }
+            dr.Close();
+            return entityStudents;
+        }
+        public static bool StudentUpdate(EntityStudents stu)
+        {
+            SqlCommand cmd4 = new SqlCommand("Update Tbl_Students SET stuName=@p1,stuLastName=@p2,stuNumber=@p3,stuPhoto=@p4,stuPassword=@p5 WHERE StuId = @p6;", Connection.bgl);
+
+            if (cmd4.Connection.State != ConnectionState.Open)
+            {
+                cmd4.Connection.Open();
+            }
+            cmd4.Parameters.AddWithValue("@p1", stu.StuName);
+            cmd4.Parameters.AddWithValue("@p2", stu.Lastname);
+            cmd4.Parameters.AddWithValue("@p3", stu.Number);
+            cmd4.Parameters.AddWithValue("@p4", stu.Photo);
+            cmd4.Parameters.AddWithValue("@p5", stu.Password);
+            cmd4.Parameters.AddWithValue("@p6", stu.StuId);
+            return cmd4.ExecuteNonQuery() > 0;
         }
     }
 }
