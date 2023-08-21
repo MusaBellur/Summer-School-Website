@@ -1,0 +1,6 @@
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Entitiy_Layer\bin\Debug\Entitiy_Layer.dll
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Entitiy_Layer\bin\Debug\Entitiy_Layer.pdb
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Entitiy_Layer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Entitiy_Layer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Entitiy_Layer\obj\Debug\Entitiy_Layer.dll
+C:\Users\Musa Bellur\source\repos\C# deneme\Summer_School_Website\Entitiy_Layer\obj\Debug\Entitiy_Layer.pdb
